@@ -13,5 +13,8 @@ RUN adduser --disabled-password \
     --gecos "Default user" \
     --uid ${NB_UID} \
     ${NB_USER}
+
+RUN sleep 3600
+
 WORKDIR ${HOME}
 USER ${USER}
